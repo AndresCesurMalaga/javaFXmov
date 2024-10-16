@@ -7,17 +7,17 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Controlador">
    <children>
-      <VBox prefHeight="600.0" prefWidth="600.0">
+      <VBox fx:id="vbox" prefHeight="600.0" prefWidth="600.0">
          <children>
-            <Pane prefHeight="400.0" prefWidth="600.0">
+            <Pane fx:id="pane1" prefHeight="400.0" prefWidth="600.0">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin></Pane>
-            <Pane prefHeight="200.0" prefWidth="600.0">
+            <Pane fx:id="pane2" prefHeight="200.0" prefWidth="600.0">
                <children>
-                  <Label fx:id="etiqueta1" layoutX="10.0" layoutY="25.0" onMouseClicked="#etiquetaSeleccionada" prefHeight="15.0" prefWidth="120.0" text="bola1"/>
+                  <Label fx:id="etiqueta1" layoutX="10.0" layoutY="25.0" onMouseClicked="#etiquetaSeleccionada" prefHeight="15.0" prefWidth="120.0" text="bola1" />
                   <Label fx:id="etiqueta2" layoutX="10.0" layoutY="50.0" onMouseClicked="#etiquetaSeleccionada" prefHeight="15.0" prefWidth="120.0" text="bola2" />
                   <Label fx:id="etiqueta3" layoutX="10.0" layoutY="75.0" onMouseClicked="#etiquetaSeleccionada" prefHeight="15.0" prefWidth="120.0" text="bola3" />
                   <Label fx:id="etiqueta4" layoutX="10.0" layoutY="100.0" onMouseClicked="#etiquetaSeleccionada" prefHeight="15.0" prefWidth="120.0" text="bola4" />

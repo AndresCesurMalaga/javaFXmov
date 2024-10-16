@@ -4,12 +4,8 @@ import java.io.IOException;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.Pane;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
 public class App extends Application {
@@ -19,8 +15,8 @@ public class App extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource(".\\..\\vista\\vista.fxml"));
 
-        stage.setTitle("movimiento");
-        stage.setScene(new Scene(root, 600, 400));
+        stage.setTitle("prueba");
+        stage.setScene(new Scene(root, 600, 600));
         stage.setResizable(false);
         stage.show();
     }

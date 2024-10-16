@@ -1,20 +1,18 @@
 package controlador;
 
 import java.net.URL;
-import java.util.EventObject;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Circle;
-import modelo.Movimiento;
+import javafx.scene.layout.VBox;
+
 
 public class Controlador implements Initializable {
     // atributos
-
     @FXML
     private Label etiqueta1;
 
@@ -31,6 +29,16 @@ public class Controlador implements Initializable {
     private Label etiqueta5;
 
     @FXML
+    private Pane pane1;
+
+    @FXML
+    private Pane pane2;
+
+    @FXML
+    private AnchorPane root;
+
+    @FXML
+    private VBox vbox;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
